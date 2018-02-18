@@ -1,10 +1,10 @@
-# Pelita demo player module
+# Pelita demo player package
 
 ## Notes on writing
 
 * Please use Python 3
 * Numpy is pre-installed on the tournament machine; everything else must be negotiated
-* Please use relative imports inside your module
+* Please use relative imports inside your package
 * All `pelita` commands should be run from the root of the repository (or outside of it), never from inside the `team/` folder, for example
 * Simple testing can be done with help of the `Makefile`
 
@@ -12,11 +12,11 @@
 
 ### `team/`
 
-The main module which contains all your team’s code. Please use relative imports from inside the module.
+The main package which contains all your team’s code. Please use relative imports from inside the package.
 
 ### `team/__init__.py`
 
-The module’s `__init__.py` is required to contain a method `team` which is supposed to return the main players for the tournament, for example:
+The packages’s `__init__.py` is required to contain a function `team` which is supposed to return the main players for the tournament, for example:
 
     def team():
         return SimpleTeam("Local marsupial team", KangarooPlayer(), KoalaPlayer())

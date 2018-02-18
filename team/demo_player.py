@@ -2,7 +2,7 @@
 from pelita.player import AbstractPlayer
 from pelita.datamodel import stop
 
-# use relative imports for things inside your module
+# use relative imports for things inside your package
 from .utils import utility_function
 
 class KangarooPlayer(AbstractPlayer):
