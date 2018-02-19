@@ -1,7 +1,7 @@
 # Throws a coin. Sets RAND to 0 or 1.
 RAND := $(shell awk 'BEGIN{srand();printf("%d", 2*rand())}')
 
-# Our default factory method
+# Location of the default factory function
 FACTORY = team/
 
 PELITA_OPTIONS =
