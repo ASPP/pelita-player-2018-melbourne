@@ -17,8 +17,9 @@ class KangarooPlayer(AbstractPlayer):
 
     def set_initial(self):
         # Now ``self.current_uni`` and ``self.current_state`` are known.
-        # ``set_initial`` is always called before ``get_move``, so we can do some
-        # additional initialisation here
+        # ``set_initial`` is called only once (at the start of the game), 
+        # but always before the first ``get_move``, so we can do some
+        # additional initialisation here.
 
         # Just printing the universe to give you an idea, please remove all
         # print statements in the final player.
