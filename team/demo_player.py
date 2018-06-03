@@ -34,12 +34,13 @@ class KangarooPlayer(AbstractPlayer):
             self.sleep_rounds -= 1
             texts = ["40°C", "Too hot", "Too tired", "Too lazy"]
             self.say(self.rnd.choice(texts))
-            return stop
+            return True
 
     def get_move(self):
         utility_function()
 
-        self.check_pause()
+        if self.check_pause():
+            return stop
 
         # legal_moves returns a dict {move: position}
         # we always need to return a move
